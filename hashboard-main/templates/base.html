@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hashboard</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+  </head>
+  <body>
+    <div class="nav">
+      <a href="/">
+        <img
+          class="logo"
+          src="{{url_for('static', filename='img/hashboard_logo_w.png')}}"
+        />
+      </a>
+      <h1 class="push">{{ title }}</h1>
+    </div>
+    <div class="page">
+      <div class="sidebar">
+        <a href="/">
+          <img
+            class="pageicon"
+            src="{{url_for('static', filename='img/search.png')}}"
+          />
+        </a>
+        <a href="settings">
+          <img
+            class="pageicon"
+            src="{{url_for('static', filename='img/settings.png')}}"
+          />
+        </a>
+      </div>
+      <div class="box">{% block content %}{% endblock %}</div>
+    </div>
+    <div class="footer">
+      <div class="footer-content">
+        Made with ❤️ by <a href="https://github.com/AaronWalker96/" class="nav-link">Aaron Walker</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+{% from "_formhelpers.html" import render_field %}
+<h2>Bitcoin Address Search</h2>
+<p>Enter a bitcoin address</p>
+<form method="post">
+  <p>{{ render_field(form.search) }}</p>
+  <p><input type="submit" value="Search" class="searchbutton" /></p>
+</form>
+{% endblock %}

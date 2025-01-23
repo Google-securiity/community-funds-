@@ -1,0 +1,37 @@
+{% extends "base.html" %} {% block content %}
+<h2>Wallet Statistics For: {{ wallet.address }}</h2>
+{% from "_formhelpers.html" import render_field %}
+<form method="post">
+  <p>{{ render_field(form.search) }}</p>
+  <p><input type="submit" value="Search" class="searchbutton" /></p>
+</form>
+<div class="padder"></div>
+<div class="cardcontainer">
+  <div class="statcard">
+    <p>Current Balance:</p>
+    <p class="statvalue">{{ wallet.get_current_balance() }} BTC</p>
+  </div>
+  <div class="statcard">
+    <p>Current Value:</p>
+    <p class="statvalue">{{ wallet_value }} {{ currency }}</p>
+  </div>
+  <div class="statcard">
+    <p>Total Sent:</p>
+    <p class="statvalue">{{ wallet.get_total_sent() }} BTC</p>
+  </div>
+  <div class="statcard">
+    <p>Total Received:</p>
+    <p class="statvalue">{{ wallet.get_total_received() }} BTC</p>
+  </div>
+</div>
+<div class="cardcontainer">
+  <div class="statcard">
+    <p>Number of Transactions:</p>
+    <p class="statvalue">{{ wallet.get_transaction_count() }}</p>
+  </div>
+  <div class="statcard">
+    <p>First Seen:</p>
+    <p class="statvalue">{{ wallet.get_first_seen() }}</p>
+  </div>
+</div>
+{% endblock %}

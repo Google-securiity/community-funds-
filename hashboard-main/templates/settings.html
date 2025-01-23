@@ -1,0 +1,19 @@
+{% extends "base.html" %} 
+{% block content %} 
+{% from "_formhelpers.html" import
+render_field %}
+<h2>Settings</h2>
+<h3>Currency Selection:</h3>
+<form name="myForm" action="" method="post" onsubmit="">
+  <div class="radiobox">
+    <input type="radio" id="GBP" name="currency" value="GBP" />
+    <label for="GBP">GBP</label><br />
+    <input type="radio" id="USD" name="currency" value="USD" />
+    <label for="USD">USD</label><br />
+    <input type="radio" id="EUR" name="currency" value="EUR" />
+    <label for="EUR">EUR</label>
+  </div>
+  <p><input type="submit" value="Update" class="searchbutton" /></p>
+</form>
+<p>{{ message }}</p>
+{% endblock %}

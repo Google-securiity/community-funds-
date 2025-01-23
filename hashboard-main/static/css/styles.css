@@ -1,0 +1,157 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #211d42;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin: 15px;
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 0px 5px;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+  padding-right: 50px;
+  cursor: pointer;
+}
+
+.push {
+  margin-left: auto;
+}
+
+.page {
+  display: flex;
+  height: 100%;
+}
+
+.sidebar {
+  padding: 30px 30px 15px 30px;
+  background-color: #373356;
+  border-radius: 15px;
+  width: min-content;
+  margin-right: 15px;
+  overflow: auto;
+}
+
+.pageicon {
+  height: 30px;
+  width: 30px;
+  padding-bottom: 15px;
+  cursor: pointer;
+}
+
+.box {
+  padding: 5px 30px;
+  background-color: #373356;
+  border-radius: 15px;
+  width: 100%;
+  overflow: auto;
+}
+
+dd {
+  display: block;
+  margin-inline-start: 0px;
+  margin: auto;
+  width: 100%;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 16px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding-right: 15px;
+}
+
+.searchbutton {
+  background-color: #8742fb;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.cardcontainer {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+form {
+  display: flex;
+  width: 65%;
+}
+
+.padder {
+  padding: 10px;
+}
+
+.radiobox {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.statcard {
+  background-color: #bdc1d0;
+  padding: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  width: 20%;
+  text-align: center;
+  color: black;
+}
+
+.statvalue {
+  font-size: 20px;
+}
+
+.footer {
+  background: #373356;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+  opacity: 0.5;
+  vertical-align: mi;
+}
+
+.footer-content {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+a.nav-link:link
+{
+   color: white;
+   text-decoration: none;
+}
+a.nav-link:visited
+{
+   color: white;
+   text-decoration: none;
+}
+a.nav-link:hover
+{
+   color: white;
+   text-decoration: none;
+}
+a.nav-link:active
+{
+   color: white;
+   text-decoration: none;
+}
